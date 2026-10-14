@@ -1,6 +1,6 @@
 ---
-name: handoff
-description: Compact the current conversation into a handoff document for another agent to pick up.
+name: fresh-start
+description: Write a handoff document for the current conversation and offer a fresh session that starts from it.
 argument-hint: "What will the next session be used for?"
 disable-model-invocation: true
 ---
