@@ -5,7 +5,7 @@ argument-hint: "What will the next session be used for?"
 disable-model-invocation: true
 ---
 
-Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save it where it will still be there in a week and will not be committed: `private/handoffs/YYYY-MM-DD-<short-slug>.md` in the project's main checkout (not a worktree, which may be deleted) when the project has a gitignored `private/` folder; otherwise the temporary directory of the user's OS (`$TMPDIR`, else `/tmp`; `%TEMP%` on Windows). Confirm with `git check-ignore` that a file saved inside a project is ignored.
+Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save it where it will still be there in a week and cannot be committed by accident: `~/.claude/handoffs/<project-folder-name>/YYYY-MM-DD-<short-slug>.md` (create the folders if needed; use `%USERPROFILE%\.claude\handoffs\...` on Windows). Do not save it inside the project or a worktree.
 
 Include a "suggested skills" section in the document, naming which skills the next agent should call the Skill tool for.
 
